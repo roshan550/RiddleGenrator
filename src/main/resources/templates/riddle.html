@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Riddle Generator</title>
+    <link rel="stylesheet" href="/css/riddle.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container">
+    <h1 >Riddle Generator</h1>
+    <div class="lang-select">
+        <label for="lang">Choose Language:</label>
+        <select id="lang">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+        </select>
+        <button id="newRiddle">New Riddle</button>
+    </div>
+    <div class="riddle-box">
+        <div id="riddle-question" class="question"></div>
+        <div id="timer" class="timer">60</div>
+        <button id="showAnswer" class="show-answer-btn">Show Answer</button>
+        <div id="riddle-answer" class="answer" style="display:none;"></div>
+    </div>
+</div>
+<script src="/js/riddle.js"></script>
+</body>
+</html> 
